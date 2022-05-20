@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+main {
+    background: linear-gradient(to bottom,
+        var(--custom-pink),
+        var(--custom-blue) 
+        50% );
+    display: grid;
+    place-content: center;
+}
+
+.ticket-card {
+    position: relative;
+    background-color: #fff;
+    height: calc(580px - 15rem);
+    width: calc(320px - 4rem);
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.1);
+    color: #333;
+    user-select: none;
+}
+  
+.ticket-card * div {
+    position: relative;
+}
+  
+div > span {
+    position: absolute;
+    top: 0.8em;
+    left: 1rem;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    color: #999;
+    font-weight: 600;
+}
+  
+.ticket-what {
+    height: 4rem;
+    width: 100%;
+    border-bottom: 1px dotted var(--custom-grey);
+}
+  
+.ticket-what h3 {
+    font-family: "Sansita", sans-serif;
+    padding-top: 1.8rem;
+    padding-left: 1rem;
+    color: var(--custom-pink);
+    letter-spacing: 1px;
+}
+  
+.ticket-where {
+    height: 5.6rem;
+    background-color: #f7f7f7;
+    position: relative;
+}
+  
+.ticket-where h4 {
+    padding-top: 1.8rem;
+    padding-left: 1rem;
+    color: var(--custom-darkgrey);
+    font-family: "open sans", sans-serif;
+    font-size: 0.8em;
+}
+  
+.ticket-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 3rem;
+    padding-top: 0.2rem;
+}
+  
+.ticket-info > div {
+    background-color: #f0f0f0;
+    border-top: 1px dotted var(--custom-grey);
+    border-bottom: 1px dotted var(--custom-grey);
+}
+  
+.ticket-info > div > h4 {
+      color: var(--custom-darkgrey);
+      padding-top: 1.2rem;
+      padding-left: 1rem;
+      font-size: .8rem;
+}
+  
+.ticket-when,
+.ticket-to {
+    border-left: 1px dotted var(--custom-grey);
+    border-right: 1px dotted var(--custom-grey);
+}
+  
+.ticket-details {
+    background-color: rgb(224, 224, 224);
+    height: 11.6rem;
+}
+  
+.ticket-barcode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticket-barcode img {
+    cursor: pointer;
+    margin-top: 1.4rem;
+    height: 5rem;
+    width: 64%;
+}
+  
+.ticket-number {
+    padding-top: 0.5rem;
+    text-align: center;
+    color: #999;
+    font-family: "open sans", sans-serif;
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    height: 100%;
+}
+  
+.ticket-number > p span {
+    text-transform: uppercase;
+}
+
+.btn-back {
+    z-index: 10;
+    margin-top: 2rem;
+    padding: .2rem .8rem;
+    width: 100%;
+}

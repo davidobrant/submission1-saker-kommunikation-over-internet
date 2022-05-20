@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/events.css">
+    <script src="./js/events.js" defer></script>
+    <title>Where it's @ | Events</title>
+</head>
+<body>
+    <main>
+        <h2 class="events-header">Events</h2>
+        <ul id="event-list" class="event-list"></ul>
+    </main>
+
+    <template data-event-template>
+        <li data-event-item class="event-item">
+            <div class="event">
+                <div class="event-date">
+                    <div data-event-day class="event-day"></div>
+                    <div data-event-month class="event-month"></div>
+                </div>
+                <div class="event-details">
+                    <h3 data-event-what class="event-title"></h3>
+                    <p data-event-where class="event-location"></p>
+                    <h4 data-event-time class="event-time"></h4>
+                    <div data-event-price class="price"></div>
+                    <div data-event-tickets class="tickets-left"></div>
+                </div>
+            </div>
+        </li>
+    </template>
+
+</body>
+</html>

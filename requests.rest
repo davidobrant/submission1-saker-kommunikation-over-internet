@@ -1,0 +1,34 @@
+###
+
+GET http://localhost:4000/api/events
+
+###
+
+GET http://localhost:4000/api/event/2
+
+###
+
+GET http://localhost:4000/api/availabletickets/2
+
+###
+
+GET http://localhost:4000/api/buyticket/1
+
+###
+
+POST http://localhost:4000/api/verify
+Content-Type: application/json
+
+{
+    "number": "abc004"
+}
+
+### 
+
+POST http://localhost:4000/auth
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "password"
+}

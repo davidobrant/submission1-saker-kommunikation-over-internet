@@ -1,0 +1,51 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #333;
+    color: white;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.links a {
+    font-size: 1.2rem;
+    color: aliceblue;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    margin: 1rem;
+    background: #888;
+}
+
+.links a:hover {
+    background: lightblue;
+    outline: 3px solid royalblue;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .1);
+}
+
+.links a:hover span {
+    color: green;
+    text-transform: uppercase;
+}

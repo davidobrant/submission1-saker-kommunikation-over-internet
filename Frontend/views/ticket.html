@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/ticket.css">
+    <script src="../js/ticket.js" defer></script>
+    <title>Where it's @ | Ticket</title>
+</head>
+<body>
+    <main>
+        <div class="ticket-card">
+            <div class="ticket-what">
+                <span>what</span>
+                <h3 data-ticket-what></h3>
+            </div>
+            <div class="ticket-where">
+                <span>where</span>
+                <h4 data-ticket-where></h4>
+            </div>
+            <div class="ticket-details">
+                <div class="ticket-info">
+                    <div class="ticket-when">
+                        <span>when</span>
+                        <h4 data-ticket-when></h4>
+                    </div>
+                    <div class="ticket-from">
+                        <span>from</span>
+                        <h4 data-ticket-from></h4>
+                    </div>
+                    <div class="ticket-to">
+                        <span>to</span>
+                        <h4 data-ticket-to></h4>
+                    </div>
+                </div>
+                <div data-barcode class="ticket-barcode">
+                    <img src="../imgs/barcode.png" alt="barcode">
+                </div>
+                <div class="ticket-number">
+                    <p>Biljettnummer: <span data-ticket-number></span></p>
+                </div>
+            </div>
+        </div>
+        <button data-back-btn class="btn-back">Back To Events</button>
+    </main>
+</body>
+</html>

@@ -1,0 +1,115 @@
+main {
+    background: var(--custom-blue);
+}
+
+.events-header {
+    color: var(--custom-pink);
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    font-family: "Sansita", sans-serif;
+    text-align: center;
+    padding: 1.6em;
+    user-select: none;
+}
+
+.event-list {
+    list-style: none;
+    margin-top: .2rem;
+}
+
+.event-list li {
+    position: relative;
+    display: flex;
+    position: relative;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.event-list li:hover {
+    background: var(--custom-darkblue);
+    outline: 1px solid var(--custom-lighterblue);
+    padding: .1rem; 
+}
+
+.event {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+}
+  
+.event-date {
+    height: 50px;
+    aspect-ratio: 1;
+    border: 1px white solid;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+  
+.event-month {
+    font-size: 0.6rem;
+}
+  
+.event-details {
+    margin-left: 1rem;
+    border-bottom: 0.1px solid #aaa;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 2px;
+}
+  
+.event-title {
+    text-shadow: 1px 1px 0px var(--custom-pink);
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+  
+.event-location {
+    font-style: italic;
+    color: var(--custom-grey);
+    font-size: 0.6em;
+}
+  
+.event-time {
+    font-style: bold;
+    color: var(--custom-grey);
+    font-size: 0.6em;
+    letter-spacing: 1px;
+}
+  
+.price {
+    position: absolute;
+    right: 0;
+    bottom: 3px;
+    color: #359c9e;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8rem;
+}
+
+.tickets-left {
+    position: absolute;
+    top: .2rem;
+    right: 0;
+    font-size: .8rem;
+}
+
+.event-list li:hover .tickets-left {
+    top: .3rem;
+}
+
+.event-list li:hover .price {
+    bottom: .3rem;
+}
+
+.slut h3 {
+    text-decoration: line-through;
+    color: #555;
+}
